@@ -1,0 +1,1205 @@
+;=======================================================================
+;  Brother Scanner Setup File
+;  Copyright (c)  2011 Brother Industries,LTD.
+;  FileName   :   brimc080.inf
+;  Function   :   Scanner(Image)
+;  I/F        :   USB
+;  OS         :   Windows 2000 / XP / VISTA / 7 / 8
+;  Model      :   MFC-9120CN
+;                 MFC-9320CW
+;                 DCP-9010CN
+;                 MFC-9010CN
+;                 MFC-9125CN
+;                 MFC-9325CW
+;                 DCP-9015CN
+;                 MFC-9015CN
+;=======================================================================
+[Version]
+Signature="$Windows NT$"
+Class=Image
+ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Provider=%Provider%
+DriverPackageType=PlugAndPlay
+DriverPackageDisplayName=%DriverPackageDisplayName%
+DriverVer=10/01/2012,01.02.02.02
+CatalogFile= brimc080.cat
+
+[Manufacturer]
+%Manufact%=MODEL,NTx86.5.1.1,NTAMD64.5.2.1,NTx86.6.0.1,NTamd64.6.0.1,NTx86.5.1,NTamd64.5.2
+
+[MODEL]
+%BRMFC9120CN.USB.SCN%  = BRMFC9120CN.USB.SCN.W2K,  USB\VID_04F9&PID_021D&MI_01
+%BRMFC9320CW.USB.SCN%  = BRMFC9320CW.USB.SCN.W2K,  USB\VID_04F9&PID_021C&MI_01
+%BRDCP9010CN.USB.SCN%  = BRDCP9010CN.USB.SCN.W2K,  USB\VID_04F9&PID_021E&MI_01
+%BRMFC9010CN.USB.SCN%  = BRMFC9010CN.USB.SCN.W2K,  USB\VID_04F9&PID_0220&MI_01
+%BRMFC9125CN.USB.SCN%  = BRMFC9125CN.USB.SCN.W2K,  USB\VID_04F9&PID_029E&MI_01
+%BRMFC9325CW.USB.SCN%  = BRMFC9325CW.USB.SCN.W2K,  USB\VID_04F9&PID_029F&MI_01
+%BRDCP9015CN.USB.SCN%  = BRDCP9015CN.USB.SCN.W2K,  USB\VID_04F9&PID_02A1&MI_01
+%BRMFC9015CN.USB.SCN%  = BRMFC9015CN.USB.SCN.W2K,  USB\VID_04F9&PID_02A2&MI_01
+
+[MODEL.NTx86.5.1.1]
+%BRMFC9120CN.USB.SCN%  = BRMFC9120CN.USB.SCN.WXP32,  USB\VID_04F9&PID_021D&MI_01
+%BRMFC9320CW.USB.SCN%  = BRMFC9320CW.USB.SCN.WXP32,  USB\VID_04F9&PID_021C&MI_01
+%BRDCP9010CN.USB.SCN%  = BRDCP9010CN.USB.SCN.WXP32,  USB\VID_04F9&PID_021E&MI_01
+%BRMFC9010CN.USB.SCN%  = BRMFC9010CN.USB.SCN.WXP32,  USB\VID_04F9&PID_0220&MI_01
+%BRMFC9125CN.USB.SCN%  = BRMFC9125CN.USB.SCN.WXP32,  USB\VID_04F9&PID_029E&MI_01
+%BRMFC9325CW.USB.SCN%  = BRMFC9325CW.USB.SCN.WXP32,  USB\VID_04F9&PID_029F&MI_01
+%BRDCP9015CN.USB.SCN%  = BRDCP9015CN.USB.SCN.WXP32,  USB\VID_04F9&PID_02A1&MI_01
+%BRMFC9015CN.USB.SCN%  = BRMFC9015CN.USB.SCN.WXP32,  USB\VID_04F9&PID_02A2&MI_01
+
+[MODEL.NTAMD64.5.2.1]
+%BRMFC9120CN.USB.SCN%  = BRMFC9120CN.USB.SCN.WXP64,  USB\VID_04F9&PID_021D&MI_01
+%BRMFC9320CW.USB.SCN%  = BRMFC9320CW.USB.SCN.WXP64,  USB\VID_04F9&PID_021C&MI_01
+%BRDCP9010CN.USB.SCN%  = BRDCP9010CN.USB.SCN.WXP64,  USB\VID_04F9&PID_021E&MI_01
+%BRMFC9010CN.USB.SCN%  = BRMFC9010CN.USB.SCN.WXP64,  USB\VID_04F9&PID_0220&MI_01
+%BRMFC9125CN.USB.SCN%  = BRMFC9125CN.USB.SCN.WXP64,  USB\VID_04F9&PID_029E&MI_01
+%BRMFC9325CW.USB.SCN%  = BRMFC9325CW.USB.SCN.WXP64,  USB\VID_04F9&PID_029F&MI_01
+%BRDCP9015CN.USB.SCN%  = BRDCP9015CN.USB.SCN.WXP64,  USB\VID_04F9&PID_02A1&MI_01
+%BRMFC9015CN.USB.SCN%  = BRMFC9015CN.USB.SCN.WXP64,  USB\VID_04F9&PID_02A2&MI_01
+
+[MODEL.NTx86.6.0.1]
+%BRMFC9120CN.USB.SCN%  = BRMFC9120CN.USB.SCN,  USB\VID_04F9&PID_021D&MI_01
+%BRMFC9320CW.USB.SCN%  = BRMFC9320CW.USB.SCN,  USB\VID_04F9&PID_021C&MI_01
+%BRDCP9010CN.USB.SCN%  = BRDCP9010CN.USB.SCN,  USB\VID_04F9&PID_021E&MI_01
+%BRMFC9010CN.USB.SCN%  = BRMFC9010CN.USB.SCN,  USB\VID_04F9&PID_0220&MI_01
+%BRMFC9125CN.USB.SCN%  = BRMFC9125CN.USB.SCN,  USB\VID_04F9&PID_029E&MI_01
+%BRMFC9325CW.USB.SCN%  = BRMFC9325CW.USB.SCN,  USB\VID_04F9&PID_029F&MI_01
+%BRDCP9015CN.USB.SCN%  = BRDCP9015CN.USB.SCN,  USB\VID_04F9&PID_02A1&MI_01
+%BRMFC9015CN.USB.SCN%  = BRMFC9015CN.USB.SCN,  USB\VID_04F9&PID_02A2&MI_01
+
+[MODEL.NTAMD64.6.0.1]
+%BRMFC9120CN.USB.SCN%  = BRMFC9120CN.USB.SCN,  USB\VID_04F9&PID_021D&MI_01
+%BRMFC9320CW.USB.SCN%  = BRMFC9320CW.USB.SCN,  USB\VID_04F9&PID_021C&MI_01
+%BRDCP9010CN.USB.SCN%  = BRDCP9010CN.USB.SCN,  USB\VID_04F9&PID_021E&MI_01
+%BRMFC9010CN.USB.SCN%  = BRMFC9010CN.USB.SCN,  USB\VID_04F9&PID_0220&MI_01
+%BRMFC9125CN.USB.SCN%  = BRMFC9125CN.USB.SCN,  USB\VID_04F9&PID_029E&MI_01
+%BRMFC9325CW.USB.SCN%  = BRMFC9325CW.USB.SCN,  USB\VID_04F9&PID_029F&MI_01
+%BRDCP9015CN.USB.SCN%  = BRDCP9015CN.USB.SCN,  USB\VID_04F9&PID_02A1&MI_01
+%BRMFC9015CN.USB.SCN%  = BRMFC9015CN.USB.SCN,  USB\VID_04F9&PID_02A2&MI_01
+
+[MODEL.NTx86.5.1]
+; XP and later (Server & DomainControler)
+
+[MODEL.NTamd64.5.2]
+; XP and later (Server & DomainControler)
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+
+;----------------------------------------
+; MFC-9120CN
+;----------------------------------------
+;----------------------------------------
+; Windows2000 
+;----------------------------------------
+[BRMFC9120CN.USB.SCN.W2K.NT]
+SubClass = StillImage
+DeviceType = 1
+DeviceSubType = 0x1
+Capabilities = 0x1
+Events = BrEvents.W2K
+DeviceData=BRMFC9120CN.USB.SCN.W2K.DeviceData
+ICMProfiles = "sRGB Color Space Profile.icm"
+CopyFiles = BrScnUsb.CopyFiles,BrStiMiniDrv.CopyFiles,BrTwdsFe.BRMFC9120CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+AddReg = BrStiUSB.AddReg,BrScnUsb.AddReg,BrModel.AddReg
+
+[BRMFC9120CN.USB.SCN.W2K.NT.Services]
+Addservice = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRMFC9120CN.USB.SCN.W2K.DeviceData]
+TwainDS=%TWAINDS.Prefix.W2k%%BRMFC9120CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 32 
+;----------------------------------------
+[BRMFC9120CN.USB.SCN.WXP32.NT]
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9120CN.USB.SCN.WXP32.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrScnUsb.CopyFiles,BrTwdsFe.BRMFC9120CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9120CN.USB.SCN.WXP32.NT.Services]
+AddService = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRMFC9120CN.USB.SCN.WXP32.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9120CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 64 
+;----------------------------------------
+[BRMFC9120CN.USB.SCN.WXP64.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9120CN.USB.SCN.WXP64.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrTwdsFe.BRMFC9120CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9120CN.USB.SCN.WXP64.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRMFC9120CN.USB.SCN.WXP64.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9120CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; Windows Vista/7 
+;----------------------------------------
+[BRMFC9120CN.USB.SCN.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9120CN.USB.SCN.DeviceData
+AddReg=BrWia20USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia20MiniDrv.CopyFiles,BrTwdsFe.BRMFC9120CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9120CN.USB.SCN.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRMFC9120CN.USB.SCN.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9120CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+ChangePaperSize=0
+
+;----------------------------------------
+; MFC-9320CW
+;----------------------------------------
+;----------------------------------------
+; Windows2000 
+;----------------------------------------
+[BRMFC9320CW.USB.SCN.W2K.NT]
+SubClass = StillImage
+DeviceType = 1
+DeviceSubType = 0x1
+Capabilities = 0x1
+Events = BrEvents.W2K
+DeviceData=BRMFC9320CW.USB.SCN.W2K.DeviceData
+ICMProfiles = "sRGB Color Space Profile.icm"
+CopyFiles = BrScnUsb.CopyFiles,BrStiMiniDrv.CopyFiles,BrTwdsFe.BRMFC9320CW.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+AddReg = BrStiUSB.AddReg,BrScnUsb.AddReg,BrModel.AddReg
+
+[BRMFC9320CW.USB.SCN.W2K.NT.Services]
+Addservice = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRMFC9320CW.USB.SCN.W2K.DeviceData]
+TwainDS=%TWAINDS.Prefix.W2k%%BRMFC9320CW.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 32 
+;----------------------------------------
+[BRMFC9320CW.USB.SCN.WXP32.NT]
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9320CW.USB.SCN.WXP32.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrScnUsb.CopyFiles,BrTwdsFe.BRMFC9320CW.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9320CW.USB.SCN.WXP32.NT.Services]
+AddService = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRMFC9320CW.USB.SCN.WXP32.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9320CW.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 64 
+;----------------------------------------
+[BRMFC9320CW.USB.SCN.WXP64.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9320CW.USB.SCN.WXP64.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrTwdsFe.BRMFC9320CW.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9320CW.USB.SCN.WXP64.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRMFC9320CW.USB.SCN.WXP64.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9320CW.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; Windows Vista/7
+;----------------------------------------
+[BRMFC9320CW.USB.SCN.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9320CW.USB.SCN.DeviceData
+AddReg=BrWia20USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia20MiniDrv.CopyFiles,BrTwdsFe.BRMFC9320CW.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9320CW.USB.SCN.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRMFC9320CW.USB.SCN.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9320CW.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+ChangePaperSize=0
+
+;----------------------------------------
+; DCP-9010CN
+;----------------------------------------
+;----------------------------------------
+; Windows2000 
+;----------------------------------------
+[BRDCP9010CN.USB.SCN.W2K.NT]
+SubClass = StillImage
+DeviceType = 1
+DeviceSubType = 0x1
+Capabilities = 0x1
+Events = BrEvents.W2K
+DeviceData=BRDCP9010CN.USB.SCN.W2K.DeviceData
+ICMProfiles = "sRGB Color Space Profile.icm"
+CopyFiles = BrScnUsb.CopyFiles,BrStiMiniDrv.CopyFiles,BrTwdsFe.BRDCP9010CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+AddReg = BrStiUSB.AddReg,BrScnUsb.AddReg,BrModel.AddReg
+
+[BRDCP9010CN.USB.SCN.W2K.NT.Services]
+Addservice = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRDCP9010CN.USB.SCN.W2K.DeviceData]
+TwainDS=%TWAINDS.Prefix.W2k%%BRDCP9010CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 32 
+;----------------------------------------
+[BRDCP9010CN.USB.SCN.WXP32.NT]
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRDCP9010CN.USB.SCN.WXP32.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrScnUsb.CopyFiles,BrTwdsFe.BRDCP9010CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRDCP9010CN.USB.SCN.WXP32.NT.Services]
+AddService = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRDCP9010CN.USB.SCN.WXP32.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRDCP9010CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 64 
+;----------------------------------------
+[BRDCP9010CN.USB.SCN.WXP64.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRDCP9010CN.USB.SCN.WXP64.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrTwdsFe.BRDCP9010CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRDCP9010CN.USB.SCN.WXP64.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRDCP9010CN.USB.SCN.WXP64.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRDCP9010CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; Windows Vista/7
+;----------------------------------------
+[BRDCP9010CN.USB.SCN.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRDCP9010CN.USB.SCN.DeviceData
+AddReg=BrWia20USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia20MiniDrv.CopyFiles,BrTwdsFe.BRDCP9010CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRDCP9010CN.USB.SCN.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRDCP9010CN.USB.SCN.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRDCP9010CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+ChangePaperSize=0
+
+;----------------------------------------
+; MFC-9010CN
+;----------------------------------------
+;----------------------------------------
+; Windows2000 
+;----------------------------------------
+[BRMFC9010CN.USB.SCN.W2K.NT]
+SubClass = StillImage
+DeviceType = 1
+DeviceSubType = 0x1
+Capabilities = 0x1
+Events = BrEvents.W2K
+DeviceData=BRMFC9010CN.USB.SCN.W2K.DeviceData
+ICMProfiles = "sRGB Color Space Profile.icm"
+CopyFiles = BrScnUsb.CopyFiles,BrStiMiniDrv.CopyFiles,BrTwdsFe.BRMFC9010CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+AddReg = BrStiUSB.AddReg,BrScnUsb.AddReg,BrModel.AddReg
+
+[BRMFC9010CN.USB.SCN.W2K.NT.Services]
+Addservice = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRMFC9010CN.USB.SCN.W2K.DeviceData]
+TwainDS=%TWAINDS.Prefix.W2k%%BRMFC9010CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 32 
+;----------------------------------------
+[BRMFC9010CN.USB.SCN.WXP32.NT]
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9010CN.USB.SCN.WXP32.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrScnUsb.CopyFiles,BrTwdsFe.BRMFC9010CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9010CN.USB.SCN.WXP32.NT.Services]
+AddService = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRMFC9010CN.USB.SCN.WXP32.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9010CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 64 
+;----------------------------------------
+[BRMFC9010CN.USB.SCN.WXP64.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9010CN.USB.SCN.WXP64.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrTwdsFe.BRMFC9010CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9010CN.USB.SCN.WXP64.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRMFC9010CN.USB.SCN.WXP64.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9010CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; Windows Vista/7
+;----------------------------------------
+[BRMFC9010CN.USB.SCN.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9010CN.USB.SCN.DeviceData
+AddReg=BrWia20USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia20MiniDrv.CopyFiles,BrTwdsFe.BRMFC9010CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9010CN.USB.SCN.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRMFC9010CN.USB.SCN.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9010CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+ChangePaperSize=0
+
+;----------------------------------------
+; MFC-9125CN
+;----------------------------------------
+;----------------------------------------
+; Windows2000 
+;----------------------------------------
+[BRMFC9125CN.USB.SCN.W2K.NT]
+SubClass = StillImage
+DeviceType = 1
+DeviceSubType = 0x1
+Capabilities = 0x1
+Events = BrEvents.W2K
+DeviceData=BRMFC9125CN.USB.SCN.W2K.DeviceData
+ICMProfiles = "sRGB Color Space Profile.icm"
+CopyFiles = BrScnUsb.CopyFiles,BrStiMiniDrv.CopyFiles,BrTwdsFe.BRMFC9125CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+AddReg = BrStiUSB.AddReg,BrScnUsb.AddReg,BrModel.AddReg
+
+[BRMFC9125CN.USB.SCN.W2K.NT.Services]
+Addservice = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRMFC9125CN.USB.SCN.W2K.DeviceData]
+TwainDS=%TWAINDS.Prefix.W2k%%BRMFC9125CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 32 
+;----------------------------------------
+[BRMFC9125CN.USB.SCN.WXP32.NT]
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9125CN.USB.SCN.WXP32.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrScnUsb.CopyFiles,BrTwdsFe.BRMFC9125CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9125CN.USB.SCN.WXP32.NT.Services]
+AddService = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRMFC9125CN.USB.SCN.WXP32.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9125CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 64 
+;----------------------------------------
+[BRMFC9125CN.USB.SCN.WXP64.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9125CN.USB.SCN.WXP64.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrTwdsFe.BRMFC9125CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9125CN.USB.SCN.WXP64.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRMFC9125CN.USB.SCN.WXP64.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9125CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; Windows Vista/7 
+;----------------------------------------
+[BRMFC9125CN.USB.SCN.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9125CN.USB.SCN.DeviceData
+AddReg=BrWia20USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia20MiniDrv.CopyFiles,BrTwdsFe.BRMFC9125CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9125CN.USB.SCN.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRMFC9125CN.USB.SCN.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9125CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+ChangePaperSize=0
+
+;----------------------------------------
+; MFC-9325CW
+;----------------------------------------
+;----------------------------------------
+; Windows2000 
+;----------------------------------------
+[BRMFC9325CW.USB.SCN.W2K.NT]
+SubClass = StillImage
+DeviceType = 1
+DeviceSubType = 0x1
+Capabilities = 0x1
+Events = BrEvents.W2K
+DeviceData=BRMFC9325CW.USB.SCN.W2K.DeviceData
+ICMProfiles = "sRGB Color Space Profile.icm"
+CopyFiles = BrScnUsb.CopyFiles,BrStiMiniDrv.CopyFiles,BrTwdsFe.BRMFC9325CW.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+AddReg = BrStiUSB.AddReg,BrScnUsb.AddReg,BrModel.AddReg
+
+[BRMFC9325CW.USB.SCN.W2K.NT.Services]
+Addservice = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRMFC9325CW.USB.SCN.W2K.DeviceData]
+TwainDS=%TWAINDS.Prefix.W2k%%BRMFC9325CW.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 32 
+;----------------------------------------
+[BRMFC9325CW.USB.SCN.WXP32.NT]
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9325CW.USB.SCN.WXP32.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrScnUsb.CopyFiles,BrTwdsFe.BRMFC9325CW.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9325CW.USB.SCN.WXP32.NT.Services]
+AddService = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRMFC9325CW.USB.SCN.WXP32.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9325CW.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 64 
+;----------------------------------------
+[BRMFC9325CW.USB.SCN.WXP64.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9325CW.USB.SCN.WXP64.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrTwdsFe.BRMFC9325CW.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9325CW.USB.SCN.WXP64.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRMFC9325CW.USB.SCN.WXP64.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9325CW.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; Windows Vista/7
+;----------------------------------------
+[BRMFC9325CW.USB.SCN.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9325CW.USB.SCN.DeviceData
+AddReg=BrWia20USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia20MiniDrv.CopyFiles,BrTwdsFe.BRMFC9325CW.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9325CW.USB.SCN.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRMFC9325CW.USB.SCN.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9325CW.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+ChangePaperSize=0
+
+;----------------------------------------
+; DCP-9015CN
+;----------------------------------------
+;----------------------------------------
+; Windows2000 
+;----------------------------------------
+[BRDCP9015CN.USB.SCN.W2K.NT]
+SubClass = StillImage
+DeviceType = 1
+DeviceSubType = 0x1
+Capabilities = 0x1
+Events = BrEvents.W2K
+DeviceData=BRDCP9015CN.USB.SCN.W2K.DeviceData
+ICMProfiles = "sRGB Color Space Profile.icm"
+CopyFiles = BrScnUsb.CopyFiles,BrStiMiniDrv.CopyFiles,BrTwdsFe.BRDCP9015CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+AddReg = BrStiUSB.AddReg,BrScnUsb.AddReg,BrModel.AddReg
+
+[BRDCP9015CN.USB.SCN.W2K.NT.Services]
+Addservice = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRDCP9015CN.USB.SCN.W2K.DeviceData]
+TwainDS=%TWAINDS.Prefix.W2k%%BRDCP9015CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 32 
+;----------------------------------------
+[BRDCP9015CN.USB.SCN.WXP32.NT]
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRDCP9015CN.USB.SCN.WXP32.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrScnUsb.CopyFiles,BrTwdsFe.BRDCP9015CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRDCP9015CN.USB.SCN.WXP32.NT.Services]
+AddService = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRDCP9015CN.USB.SCN.WXP32.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRDCP9015CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 64 
+;----------------------------------------
+[BRDCP9015CN.USB.SCN.WXP64.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRDCP9015CN.USB.SCN.WXP64.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrTwdsFe.BRDCP9015CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRDCP9015CN.USB.SCN.WXP64.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRDCP9015CN.USB.SCN.WXP64.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRDCP9015CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; Windows Vista/7
+;----------------------------------------
+[BRDCP9015CN.USB.SCN.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRDCP9015CN.USB.SCN.DeviceData
+AddReg=BrWia20USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia20MiniDrv.CopyFiles,BrTwdsFe.BRDCP9015CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRDCP9015CN.USB.SCN.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRDCP9015CN.USB.SCN.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRDCP9015CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+ChangePaperSize=0
+
+;----------------------------------------
+; MFC-9015CN
+;----------------------------------------
+;----------------------------------------
+; Windows2000 
+;----------------------------------------
+[BRMFC9015CN.USB.SCN.W2K.NT]
+SubClass = StillImage
+DeviceType = 1
+DeviceSubType = 0x1
+Capabilities = 0x1
+Events = BrEvents.W2K
+DeviceData=BRMFC9015CN.USB.SCN.W2K.DeviceData
+ICMProfiles = "sRGB Color Space Profile.icm"
+CopyFiles = BrScnUsb.CopyFiles,BrStiMiniDrv.CopyFiles,BrTwdsFe.BRMFC9015CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+AddReg = BrStiUSB.AddReg,BrScnUsb.AddReg,BrModel.AddReg
+
+[BRMFC9015CN.USB.SCN.W2K.NT.Services]
+Addservice = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRMFC9015CN.USB.SCN.W2K.DeviceData]
+TwainDS=%TWAINDS.Prefix.W2k%%BRMFC9015CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 32 
+;----------------------------------------
+[BRMFC9015CN.USB.SCN.WXP32.NT]
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9015CN.USB.SCN.WXP32.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrScnUsb.CopyFiles,BrTwdsFe.BRMFC9015CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9015CN.USB.SCN.WXP32.NT.Services]
+AddService = BrScnUsb, 0x00000002, BrScnUsb.AddService
+
+[BRMFC9015CN.USB.SCN.WXP32.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9015CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; WindowsXP 64 
+;----------------------------------------
+[BRMFC9015CN.USB.SCN.WXP64.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9015CN.USB.SCN.WXP64.DeviceData
+AddReg=BrWia10USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia10MiniDrv.CopyFiles,BrTwdsFe.BRMFC9015CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9015CN.USB.SCN.WXP64.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRMFC9015CN.USB.SCN.WXP64.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9015CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+
+;----------------------------------------
+; Windows Vista/7
+;----------------------------------------
+[BRMFC9015CN.USB.SCN.NT]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+Capabilities=0x39
+PortSelect=NO
+Events = BrEvents
+DeviceData=BRMFC9015CN.USB.SCN.DeviceData
+AddReg=BrWia20USB.AddReg,BrModel.AddReg
+CopyFiles=BrWia20MiniDrv.CopyFiles,BrTwdsFe.BRMFC9015CN.CopyFiles,BrTwdsMain.CopyFiles,BrTwdsLang.CopyFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+
+[BRMFC9015CN.USB.SCN.NT.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+[BRMFC9015CN.USB.SCN.DeviceData]
+Server=local
+UI Class ID={4DB1AD10-3391-11D2-9A33-00C04FA36145}
+TwainDS=%TWAINDS.Prefix%%BRMFC9015CN.USB.SCN%
+Model=0-GENERAL
+STIFILE=%StiCoreFileName%
+ChangePaperSize=0
+
+;----------------------------------------
+; Add reg DeviceData
+;
+[BrModel.AddReg]
+
+HKR,DeviceData,OpenTimeout    ,0x10001,360000
+HKR,DeviceData,ScannerType    ,0x00000,2
+HKR,DeviceData,DocHandling    ,0x00000,3
+HKR,DeviceData,ResoType       ,0x00000,2
+HKR,DeviceData,MaxResoNo      ,0x00000,8
+HKR,DeviceData,MaxResoCatalog ,0x00000,12
+HKR,DeviceData,OpticalResoX   ,0x00000,1200
+HKR,DeviceData,OpticalResoY   ,0x00000,2400
+HKR,DeviceData,BedDocWidth    ,0x00000,8268
+HKR,DeviceData,FeederDocWidth ,0x00000,8268
+HKR,DeviceData,FeederDocHeight,0x00000,13763
+HKR,DeviceData,EventImage     ,0x00000,1
+HKR,DeviceData,EventOcr       ,0x00000,1
+HKR,DeviceData,EventEmail     ,0x00000,1
+HKR,DeviceData,EventFile2     ,0x00000,1
+HKR,DeviceData,SetupInit      ,0x00000,1
+HKR,DeviceData,EnCmpJ         ,0x00000,1
+HKR,DeviceData,CmpRate        ,0x00000,2
+HKR,DeviceData,Command-S      ,0x00000,1
+HKR,DeviceData,Command-D      ,0x00000,1
+HKR,DeviceData,Command-K      ,0x00000,0
+HKR,DeviceData,SkeyHandling   ,0x00000,1
+HKR,DeviceData,DuplexScn      ,0x00000,0
+HKR,DeviceData,BedHReg        ,0x00000,1
+
+
+
+;----------------------------------------
+; Add reg USB
+;
+[BrScnUsb.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,BrScnUsb.sys
+
+[BrStiUSB.AddReg]
+HKR,,HardwareConfig,1,1
+HKR,,USDClass,,"{546D420A-D041-406b-A360-6B65EA5F0AA1}"
+HKCR,CLSID\{546D420A-D041-406b-A360-6B65EA5F0AA1} ,,,%BrStiUsd%
+HKCR,CLSID\{546D420A-D041-406b-A360-6B65EA5F0AA1}\InProcServer32,,,%11%\%StiFileName%
+HKCR,CLSID\{546D420A-D041-406b-A360-6B65EA5F0AA1}\InProcServer32,ThreadingModel,,"Both"
+
+[BrWia10USB.AddReg]
+HKR,,HardwareConfig,1,4
+HKR,,USDClass,,"{F6600A23-CF47-416c-AAE4-FD56635B0753}"
+HKR,DeviceData,OpenTimeout,0x10001,360000
+HKCR,CLSID\{F6600A23-CF47-416c-AAE4-FD56635B0753} ,,,%BrWiaUsd%
+HKCR,CLSID\{F6600A23-CF47-416c-AAE4-FD56635B0753}\InProcServer32,,,%11%\%Wia10FileName%
+HKCR,CLSID\{F6600A23-CF47-416c-AAE4-FD56635B0753}\InProcServer32,ThreadingModel,,"Both"
+
+[BrWia20USB.AddReg]
+HKR,,HardwareConfig,1,4
+HKR,,USDClass,,"{70F71D39-E335-41cd-9802-845A66FF1F2D}"
+HKR,DeviceData,OpenTimeout,0x10001,360000
+HKCR,CLSID\{70F71D39-E335-41cd-9802-845A66FF1F2D} ,,,%BrWiaUsd%
+HKCR,CLSID\{70F71D39-E335-41cd-9802-845A66FF1F2D}\InProcServer32,,,%11%\%Wia20FileName%
+HKCR,CLSID\{70F71D39-E335-41cd-9802-845A66FF1F2D}\InProcServer32,ThreadingModel,,"Both"
+
+;----------------------------------------
+; Add Service
+;
+[BrScnUsb.AddService]
+DisplayName    = %BrScnUsb.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\BrScnUsb.sys
+LoadOrderGroup = Base
+
+;----------------------------------------
+; Events
+;
+[BrEvents.W2K]
+ScanToOcr=%ScanToOcr%,{9d095b89-37d6-4877-afed-62a297dc6dbe},ControlCenter3
+ScanToSpApp=%ScanToSpApp%,{a6c5a715-8c6e-11d2-977a-0000f87a926f},ControlCenter3
+ScanToEmail=%ScanToEmail%,{c686dcee-54f2-419e-9a27-2fc7f2e98f9e},ControlCenter3
+ScanToFile=%ScanToFile%,{fc4767c1-c8b3-48a2-9cfa-2e90cb3d3590},ControlCenter3
+
+[BrEvents]
+ScanToOcr=%ScanToOcr%,{9d095b89-37d6-4877-afed-62a297dc6dbe},*
+ScanToSpApp=%ScanToSpApp%,{a6c5a715-8c6e-11d2-977a-0000f87a926f},*
+ScanToEmail=%ScanToEmail%,{c686dcee-54f2-419e-9a27-2fc7f2e98f9e},*
+ScanToFile=%ScanToFile%,{fc4767c1-c8b3-48a2-9cfa-2e90cb3d3590},*
+
+;----------------------------------------
+; Copy Files
+;
+[BrScnUsb.CopyFiles]
+BrScnUsb.sys
+
+[BrStiMiniDrv.CopyFiles]
+BrSti09c.dll
+BrUsi09c.dll
+
+[BrWia10MiniDrv.CopyFiles]
+BrWia09c.dll
+BrUsi09c.dll
+
+[BrWia20MiniDrv.CopyFiles]
+BrWi209c.dll
+BrUsi09c.dll
+
+[BrTwdsMain.CopyFiles]
+BrTwds.dll
+BrTwdsUi.dll
+BrTwdScn.dll
+BrScnDev.dll
+BrStiIf.dll
+BrScnFlt.dll
+
+[BrTwdsLang.CopyFiles]
+BrTwdLng.dll
+BrScnHlp.chm
+
+[BrTwdsFe.BRMFC9120CN.CopyFiles]
+BrTwdFe.ds
+TWMF9120CNU.INI
+
+[BrTwdsFe.BRMFC9320CW.CopyFiles]
+BrTwdFe.ds
+TWMF9320CWU.INI
+
+[BrTwdsFe.BRDCP9015CN.CopyFiles]
+BrTwdFe.ds
+TWDC9015CNU.INI
+
+[BrTwdsFe.BRMFC9015CN.CopyFiles]
+BrTwdFe.ds
+TWMF9015CNU.INI
+
+[BrTwdsFe.BRDCP9010CN.CopyFiles]
+BrTwdFe.ds
+TWDC9010CNU.INI
+
+[BrTwdsFe.BRMFC9010CN.CopyFiles]
+BrTwdFe.ds
+TWMF9010CNU.INI
+
+[BrTwdsFe.BRMFC9125CN.CopyFiles]
+BrTwdFe.ds
+TWMF9125CNU.INI
+
+[BrTwdsFe.BRMFC9325CW.CopyFiles]
+BrTwdFe.ds
+TWMF9325CWU.INI
+
+;----------------------------------------
+; Destination Directories
+;
+
+
+[DestinationDirs]
+DefaultDestDir           = 11
+BrScnUsb.CopyFiles       = 12
+BrTwdsMain.CopyFiles     = 10,TWAIN_32\%TwainDirName%\Common
+BrTwdsLang.CopyFiles     = 10,TWAIN_32\%TwainDirName%\Lang
+
+BrTwdsFe.BRMFC9120CN.CopyFiles   = 10,TWAIN_32\%TwainDirName%\MF9120CNU
+BrTwdsFe.BRMFC9320CW.CopyFiles   = 10,TWAIN_32\%TwainDirName%\MF9320CWU
+BrTwdsFe.BRDCP9010CN.CopyFiles   = 10,TWAIN_32\%TwainDirName%\DC9010CNU
+BrTwdsFe.BRMFC9010CN.CopyFiles   = 10,TWAIN_32\%TwainDirName%\MF9010CNU
+BrTwdsFe.BRDCP9015CN.CopyFiles   = 10,TWAIN_32\%TwainDirName%\DC9015CNU
+BrTwdsFe.BRMFC9015CN.CopyFiles   = 10,TWAIN_32\%TwainDirName%\MF9015CNU
+BrTwdsFe.BRMFC9125CN.CopyFiles   = 10,TWAIN_32\%TwainDirName%\MF9125CNU
+BrTwdsFe.BRMFC9325CW.CopyFiles   = 10,TWAIN_32\%TwainDirName%\MF9325CWU
+;----------------------------------------
+; Source Disks
+;
+[SourceDisksNames]
+1 = %BrDrvDisk1%
+
+[SourceDisksNames.x86]
+3 = %BrDrvDisk1%,,,x86
+
+[SourceDisksNames.amd64]
+4 = %BrDrvDisk1%,,,amd64
+
+[SourceDisksFiles]
+;; System
+BrScnUsb.sys=1,,
+;; Sti
+BrSti09c.dll = 1,,
+;; StiCore
+BrUsi09c.dll = 1,,
+
+;; Twain
+BrTwdFe.ds=1,,
+BrTwds.dll=1,,
+BrTwdsUi.dll=1,,
+BrTwdScn.dll=1,,
+BrScnDev.dll=1,,
+BrStiIf.dll=1,,
+BrScnFlt.dll=1,,
+;; Twain Lang
+BrTwdLng.dll=1,,
+BrScnHlp.chm=1,,
+;; Twain Setting
+TWMF9120CNU.INI=1,,
+TWMF9320CWU.INI=1,,
+TWDC9010CNU.INI=1,,
+TWMF9010CNU.INI=1,,
+TWDC9015CNU.INI=1,,
+TWMF9015CNU.INI=1,,
+TWMF9125CNU.INI=1,,
+TWMF9325CWU.INI=1,,
+
+[SourceDisksFiles.x86]
+;; WIA 1.0
+BrWia09c.dll = 3,,
+;; WIA 2.0
+BrWi209c.dll = 3,,
+
+[SourceDisksFiles.amd64]
+;; WIA 1.0
+BrWia09c.dll = 4,,
+;; WIA 2.0
+BrWi209c.dll = 4,,
+;; StiCore
+BrUsi09c.dll = 4,,
+
+
+;----------------------------------------
+; Localizable Strings
+;
+[Strings]
+Provider="Brother"
+Manufact="Brother"
+DriverPackageDisplayName="DCP-9010CN,MFC-9010CN,DCP-9015CN,MFC-9015CN,MFC-9120CN,MFC-9320CW,MFC-9125CN,MFC-9325CW"
+
+BrDrvDisk1="Brother MFC Driver Disk"
+BrScnUsb.SvcDesc="Brother USB Still Image driver"
+BrStiUsd="Brother Sti Scanner minidriver"
+BrWiaUsd="Brother Wia Scanner minidriver"
+
+;; Events
+ScanToOcr="Scan To OCR - Button Press"
+ScanToSpApp="Scan To Image - Button Press"
+ScanToEmail="Scan To E-mail - Button Press"
+ScanToFile="Scan To File - Button Press"
+
+;; Name
+TWAINDS.Prefix.W2k = "TW-"
+TWAINDS.Prefix     = "WIA-"
+StiCoreFileName    = "BrUsi09c.dll"	;; STI CORE FILE NAME
+Wia10FileName      = "BrWia09c.dll"	;; WIA 1.0 FILE NAME
+Wia20FileName      = "BrWi209c.dll"	;; WIA 2.0 FILE NAME
+StiFileName        = "BrSti09c.dll"	;; STI FILE NAME
+TwainDirName       = "BrMfSc09b"   	;; TWAIN Directory Name
+BRMFC9120CN.USB.SCN ="Brother MFC-9120CN"
+BRMFC9320CW.USB.SCN ="Brother MFC-9320CW"
+BRDCP9015CN.USB.SCN ="Brother DCP-9015CN"
+BRMFC9015CN.USB.SCN ="Brother MFC-9015CN"
+BRDCP9010CN.USB.SCN ="Brother DCP-9010CN"
+BRMFC9010CN.USB.SCN ="Brother MFC-9010CN"
+BRMFC9125CN.USB.SCN ="Brother MFC-9125CN"
+BRMFC9325CW.USB.SCN ="Brother MFC-9325CW"

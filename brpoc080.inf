@@ -1,0 +1,116 @@
+;=======================================================================
+;  Brother MFC Setup File
+;  Copyright (c)  2011 Brother Industries,LTD.
+;  FileName   :   brpoc080.inf
+;  Function   :   Ports
+;  I/F        :   USB
+;  OS         :   Windows2000/XP/Vista/Windows7/Windows8
+;  Model      :   c080
+;=======================================================================
+[Version]
+Signature  = "$Windows NT$"
+Class      = Ports
+ClassGUID  = {4d36e978-e325-11ce-bfc1-08002be10318}
+Provider   = %Provider%
+DriverPackageType=PlugAndPlay
+DriverPackageDisplayName=%DriverPackageDisplayName%
+DriverVer= 10/02/2012, 01.01.02.02
+CatalogFile= brpoc080.cat
+
+[Manufacturer]
+%Manufact% = MFC_SER, NTx86, NTamd64
+
+[ControlFlags]
+ExcludeFromSelect=*
+
+[MFC_SER]
+"Brother MFC-9120CN Remote Setup Port" = BROTHER.USB.SERIAL, USB\VID_04F9&PID_021D&MI_02
+"Brother MFC-9320CW Remote Setup Port" = BROTHER.USB.SERIAL, USB\VID_04F9&PID_021C&MI_02
+"Brother MFC-9125CN Remote Setup Port" = BROTHER.USB.SERIAL, USB\VID_04F9&PID_029E&MI_02
+"Brother MFC-9325CW Remote Setup Port" = BROTHER.USB.SERIAL, USB\VID_04F9&PID_029F&MI_02
+
+
+[MFC_SER.NTx86]
+"Brother MFC-9120CN Remote Setup Port" = BROTHER.USB.SERIAL, USB\VID_04F9&PID_021D&MI_02
+"Brother MFC-9320CW Remote Setup Port" = BROTHER.USB.SERIAL, USB\VID_04F9&PID_021C&MI_02
+"Brother MFC-9125CN Remote Setup Port" = BROTHER.USB.SERIAL, USB\VID_04F9&PID_029E&MI_02
+"Brother MFC-9325CW Remote Setup Port" = BROTHER.USB.SERIAL, USB\VID_04F9&PID_029F&MI_02
+
+
+[MFC_SER.NTamd64]
+"Brother MFC-9120CN Remote Setup Port" = BROTHER.USB.SERIAL, USB\VID_04F9&PID_021D&MI_02
+"Brother MFC-9320CW Remote Setup Port" = BROTHER.USB.SERIAL, USB\VID_04F9&PID_021C&MI_02
+"Brother MFC-9125CN Remote Setup Port" = BROTHER.USB.SERIAL, USB\VID_04F9&PID_029E&MI_02
+"Brother MFC-9325CW Remote Setup Port" = BROTHER.USB.SERIAL, USB\VID_04F9&PID_029F&MI_02
+
+
+[BROTHER.USB.SERIAL]
+CopyFiles=BROTHER.USB.SERIAL.CopyFiles
+
+[BROTHER.USB.SERIAL.Services]
+Addservice = BrSerIb , 0x00000002, BrSerIb.AddService
+Addservice = BrUsbSIb, 0x00000000, BrUsbSIb.AddService
+
+[BROTHER.USB.SERIAL.HW]
+AddReg=BROTHER.USB.SERIAL.AddReg.HW
+
+[BROTHER.USB.SERIAL.CopyFiles]
+BrSerIb.sys
+BrUsbSib.sys
+
+;-------------------------------------------------------------------------------
+; Lower Filter Driver 
+;
+[BROTHER.USB.SERIAL.AddReg.HW]
+HKR,,"LowerFilters", 0x00010000, "BrUsbSIb"
+
+;--------------------------------------------------
+; Add Service
+;
+[BrSerIb.AddService]
+DisplayName    = %BrSerIb.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\BrSerIb.sys
+
+[BrUsbSIb.AddService]
+DisplayName    = %BrUsbSIb.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\BrUsbSIb.sys
+
+;----------------------------------------------------------------------
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %BrDrvDisk1%
+
+[SourceDisksNames.x86]
+2 = %BrDrvDisk1%,,,x86
+
+[SourceDisksNames.amd64]
+3 = %BrDrvDisk1%,,,amd64
+
+[SourceDisksFiles]
+
+[SourceDisksFiles.x86]
+BrSerIb.sys=2
+BrUsbSib.sys=2
+
+[SourceDisksFiles.amd64]
+BrSerIb.sys=3
+BrUsbSib.sys=3
+
+[Strings]
+Manufact = "Brother"
+Provider = "Brother"
+DriverPackageDisplayName="MFC-9120CN,MFC-9320CW,MFC-9125CN,MFC-9325CW,"
+
+BrDrvDisk1 = "Brother Driver Disk"
+
+BrSerIb.SvcDesc = "Brother Serial Interface Driver(WDM)"
+BrUsbSIb.SvcDesc = "Brother Serial USB Driver(WDM)"
